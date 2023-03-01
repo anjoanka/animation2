@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles {
+    display: flex;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+
+.one {
+    background: #6999ff;
+    animation-delay: 0s;
+}
+.two {
+    background: #5869ff;
+    animation-delay: 0.1s;
+}
+.three {
+    background: #8769ff;
+    animation-delay: 0.2s;
+}
+.four {
+    background: #d069ff;
+    animation-delay: 0.3s;
+}
+.five {
+    background: #ff69ff;
+    animation-delay: 0.4s;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
